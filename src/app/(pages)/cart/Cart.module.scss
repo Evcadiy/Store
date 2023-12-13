@@ -1,0 +1,118 @@
+.cart {
+  padding-bottom: 100px;
+  .totalAmount {
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 26px;
+  }
+  .emptyCart {
+    font-size: 30px;
+  }
+  .card {
+    @media (max-width: 1024px) {
+      width: 700px;
+    }
+    @media (max-width: 768px) {
+      width: 600px;
+      gap: 5px;
+    }
+    @media (max-width: 601px) {
+      width: 320px;
+    }
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    font-size: 24px;
+    margin-top: 50px;
+    width: 1000px;
+    max-height: 700px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    .about {
+      @media (max-width: 1024px) {
+        justify-content: center;
+        gap: 180px;
+      }
+      @media (max-width: 768px) {
+        gap: 120px;
+      }
+      @media (max-width: 601px) {
+        gap: 40px;
+        font-size: 18px;
+      }
+
+      background-color: #c98f70;
+      padding-top: 20px;
+      padding: 10px 100px 10px 100px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .content {
+      @media (max-width: 601px) {
+        padding: 0px 30px;
+      }
+      padding: 0px 50px;
+      display: flex;
+
+      .title {
+        @media (max-width: 768px) {
+          font-size: 20px;
+          width: 200px;
+          padding-right: 0px;
+        }
+        width: 350px;
+        padding-right: 50px;
+        // border-right: 1px solid #333;
+      }
+      .price {
+        @media (max-width: 1024px) {
+          margin-left: 20px;
+        }
+        @media (max-width: 768px) {
+          font-size: 20px;
+
+          padding-left: 0px;
+        }
+        width: 200px;
+        padding-left: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // border-right: 1px solid #333;
+      }
+      .quantity {
+        @media (max-width: 1024px) {
+          padding-right: 30px;
+        }
+        @media (max-width: 768px) {
+          font-size: 20px;
+          padding-left: 40px;
+        }
+        padding-left: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    .buttons {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0px 20px 10px 0px;
+      .addBtn {
+        background-color: rgb(90, 231, 90);
+        padding: 0px 20px;
+        color: #fff;
+        border-radius: 10px 0px 0px 10px;
+      }
+      .removeBtn {
+        background-color: red;
+        padding: 0px 20px;
+        color: #fff;
+        border-radius: 0px 10px 10px 0px;
+      }
+    }
+  }
+}
